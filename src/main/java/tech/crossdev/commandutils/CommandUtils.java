@@ -28,12 +28,6 @@ public final class CommandUtils extends JavaPlugin implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event)
     {
-        /* Obtain player from event and check their permission. If they're privileged, continue.  */
 
-        Player joinedPlayer = event.getPlayer();
-
-        if(!joinedPlayer.isOp()) return;
-
-        joinedPlayer.sendMessage("Hello!" + joinedPlayer.getName());
     }
 }
