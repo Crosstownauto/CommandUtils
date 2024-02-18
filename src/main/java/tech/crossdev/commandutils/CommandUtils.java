@@ -6,8 +6,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.logging.Level;
-
 public final class CommandUtils extends JavaPlugin implements Listener {
 
     @Override
@@ -16,10 +14,8 @@ public final class CommandUtils extends JavaPlugin implements Listener {
 
         super.onEnable();
 
-        // Drop a startup message
-        this.getLogger().log(Level.INFO, "CommandUtils has been loaded.");
-
-        // TODO: Implement update checking...
+        // Get current version
+        VersionCheck.Check(this.getPluginMeta().getVersion());
 
         /* Attempt to register the plugin as a listener to bukkit events. */
         Bukkit.getPluginManager().registerEvents(this, this);
@@ -36,4 +32,5 @@ public final class CommandUtils extends JavaPlugin implements Listener {
     {
 
     }
+
 }
