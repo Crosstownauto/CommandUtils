@@ -1,0 +1,7 @@
+name: CommandUtils
+version: '${project.version}'
+main: tech.crossdev.commandutils.CommandUtils
+api-version: '1.20'
+authors: [CrossDev]
+description: A Plugin designed to speed-up the usage of commands by introducting helpful commands
+website: www.crossdev.tech
