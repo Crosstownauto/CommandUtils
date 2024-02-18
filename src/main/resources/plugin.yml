@@ -3,5 +3,11 @@ version: '${project.version}'
 main: tech.crossdev.commandutils.CommandUtils
 api-version: '1.20'
 authors: [CrossDev]
-description: A Plugin designed to speed-up the usage of commands by introducting helpful commands
-website: www.crossdev.tech
+description: A Plugin designed to speed-up the usage of commands by introducing helpful commands
+website: www.CrossDev.tech
+commands:
+  multiexecute:
+    description: Multi-execute commands or stack them on top of eachother (for example, /multiex <command1> <command2> etc etc) it will execute them in series.
+    aliases:
+      - multiex
+    usage: /<command> <command1> <command2> etc..
