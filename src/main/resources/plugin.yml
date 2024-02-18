@@ -10,4 +10,4 @@ commands:
     description: Multi-execute commands or stack them on top of eachother (for example, /multiex <command1> <command2> etc etc) it will execute them in series.
     aliases:
       - multiex
-    usage: /<command> <command1> <command2> etc..
+    usage: /<command> <command1>-<Options> <command2>-<Options> etc..
